@@ -9,7 +9,7 @@
     <div class="container">
       <nav class="main-navigation">
         <a href="index.html">
-          <img src="http://placehold.it/155x75" width="155" height="75" alt="Глейси">
+          <img src="img/header-logo.png" width="154" height="64" alt="Глейси">
         </a>
         <ul>
           <li class="current">
@@ -71,7 +71,7 @@
                 <li class="order-list-item">
                   <form class="delete-item-form" action="https://echo.htmlacademy.ru" method="post">
                     <button class="delete-btn">X</button>
-                    <img src="http://placehold.it/35x35" width="35" height="35" alt="Удалить">
+                    <img src="img/products/product-orange.jpg" width="35" height="35" alt="Удалить">
                     <input type="text" name="product-item" value="creamy-orange" hidden>
                     <span>Пломбир с апельсиновым джемом</span>
                     <span>1,5 кг x <i>200 руб.</i></span>
@@ -81,7 +81,7 @@
                 <li class="order-list-item">
                   <form class="delete-item-form" action="https://echo.htmlacademy.ru" method="post">
                     <button class="delete-btn">X</button>
-                    <img src="http://placehold.it/35x35" width="35" height="35" alt="Удалить">
+                    <img src="img/products/product-strawberry.jpg" width="35" height="35" alt="Удалить">
                     <input type="text" name="product-item" value="creamy-strawberry" hidden>
                     <span>Клубничный пломбир с присыпкой из белого шоколада</span>
                     <span>1,5 кг x <i>300 руб.</i></span>
@@ -117,7 +117,7 @@
           </li>
         </ul>
       </div>
-      <h1>Сливочное мороженое</h1>
+      <h2>Сливочное мороженое</h2>
     </div>
 
     <div class="filters">
@@ -127,7 +127,9 @@
           <div class="filters-form-part-selector">
             <select name="sort-by" id="sort-by">
               <option value="popularity">по популярности</option>
-              <option value="price">по цене</option>
+              <option value="price-asc">сначала недорогие</option>
+              <option value="price-desc">сначала дорогие</option>
+              <option value="fat">по жирности</option>
             </select>
           </div>
         </div>
@@ -183,11 +185,11 @@
     <div class="products">
       <div class="product-card">
         <div class="product-image">
-          <img src="http://placehold.it/268x268" width="268" height="268" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+          <img src="img/products/product-orange.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
         </div>
         <div class="product-price">
           <p><b>310</b>
-          <img src="https://www.artlebedev.ru/tools/technogrette/html/rouble/ruble.gif" width="30" height="40" alt="Р">
+          <img src="img/rouble.svg" width="28" height="30" alt="Р">
           / кг
           </p>
         </div>
@@ -196,11 +198,11 @@
       </div>
       <div class="product-card">
         <div class="product-image">
-          <img src="http://placehold.it/268x268" width="268" height="268" alt="Сливочно-кофейное с кусочками шоколада">
+          <img src="img/products/product-choco.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
         </div>
         <div class="product-price">
           <p><b>380</b>
-          <img src="https://www.artlebedev.ru/tools/technogrette/html/rouble/ruble.gif" width="30" height="40" alt="Р">
+          <img src="img/rouble.svg" width="28" height="30" alt="Р">
           / кг
           </p>
         </div>
@@ -209,11 +211,11 @@
       </div>
       <div class="product-card">
         <div class="product-image">
-          <img src="http://placehold.it/268x268" width="268" height="268" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+          <img src="img/products/product-strawberry.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
         </div>
         <div class="product-price">
           <p><b>355</b>
-          <img src="https://www.artlebedev.ru/tools/technogrette/html/rouble/ruble.gif" width="30" height="40" alt="Р">
+          <img src="img/rouble.svg" width="28" height="30" alt="Р">
           / кг
           </p>
         </div>
@@ -222,11 +224,11 @@
       </div>
       <div class="product-card">
         <div class="product-image">
-          <img src="http://placehold.it/268x268" width="268" height="268" alt="Сливочное крем-брюле с карамельной подливкой">
+          <img src="img/products/product-cremebrulee.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
         </div>
         <div class="product-price">
           <p><b>415</b>
-          <img src="https://www.artlebedev.ru/tools/technogrette/html/rouble/ruble.gif" width="30" height="40" alt="Р">
+          <img src="img/rouble.svg" width="28" height="30" alt="Р">
           / кг
           </p>
         </div>
@@ -235,11 +237,11 @@
       </div>
       <div class="product-card">
         <div class="product-image">
-          <img src="http://placehold.it/268x268" width="268" height="268" alt="Сливочное с брусничным джемом">
+          <img src="img/products/product-cranberry.jpg" width="267" height="267" alt="Сливочное с брусничным джемом">
         </div>
         <div class="product-price">
           <p><b>325</b>
-          <img src="https://www.artlebedev.ru/tools/technogrette/html/rouble/ruble.gif" width="30" height="40" alt="Р">
+          <img src="img/rouble.svg" width="28" height="30" alt="Р">
           / кг
           </p>
         </div>
@@ -248,11 +250,11 @@
       </div>
       <div class="product-card">
         <div class="product-image">
-          <img src="http://placehold.it/268x268" width="268" height="268" alt="Сливочно-черничное с цельными ягодами черники">
+          <img src="img/products/product-blueberry.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
         </div>
         <div class="product-price">
           <p><b>410</b>
-          <img src="https://www.artlebedev.ru/tools/technogrette/html/rouble/ruble.gif" width="30" height="40" alt="Р">
+          <img src="img/rouble.svg" width="28" height="30" alt="Р">
           / кг
           </p>
         </div>
@@ -261,11 +263,11 @@
       </div>
       <div class="product-card">
         <div class="product-image">
-          <img src="http://placehold.it/268x268" width="268" height="268" alt="Сливочно-лимонное с карамельной присыпкой">
+          <img src="img/products/product-lemon.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
         </div>
         <div class="product-price">
           <p><b>375</b>
-          <img src="https://www.artlebedev.ru/tools/technogrette/html/rouble/ruble.gif" width="30" height="40" alt="Р">
+          <img src="img/rouble.svg" width="28" height="30" alt="Р">
           / кг
           </p>
         </div>
@@ -274,11 +276,11 @@
       </div>
       <div class="product-card">
         <div class="product-image">
-          <img src="http://placehold.it/268x268" width="268" height="268" alt="Сливочное с шоколадной стружкой">
+          <img src="img/products/product-chocoflakes.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой">
         </div>
         <div class="product-price">
           <p><b>320</b>
-          <img src="https://www.artlebedev.ru/tools/technogrette/html/rouble/ruble.gif" width="30" height="40" alt="Р">
+          <img src="img/rouble.svg" width="28" height="30" alt="Р">
           / кг
           </p>
         </div>
@@ -287,11 +289,11 @@
       </div>
       <div class="product-card">
         <div class="product-image">
-          <img src="http://placehold.it/268x268" width="268" height="268" alt="Сливочно-ванильное с кусочками шоколада">
+          <img src="img/products/product-vanilla.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
         </div>
         <div class="product-price">
           <p><b>440</b>
-          <img src="https://www.artlebedev.ru/tools/technogrette/html/rouble/ruble.gif" width="30" height="40" alt="Р">
+          <img src="img/rouble.svg" width="28" height="30" alt="Р">
           / кг
           </p>
         </div>
@@ -300,11 +302,11 @@
       </div>
       <div class="product-card">
         <div class="product-image">
-          <img src="http://placehold.it/268x268" width="268" height="268" alt="Сливочное с ментоловым сиропом">
+          <img src="img/products/product-menthol.jpg" width="267" height="267" alt="Сливочное с ментоловым сиропом">
         </div>
         <div class="product-price">
           <p><b>435</b>
-          <img src="https://www.artlebedev.ru/tools/technogrette/html/rouble/ruble.gif" width="30" height="40" alt="Р">
+          <img src="img/rouble.svg" width="28" height="30" alt="Р">
           / кг
           </p>
         </div>
@@ -313,11 +315,11 @@
       </div>
       <div class="product-card">
         <div class="product-image">
-          <img src="http://placehold.it/268x268" width="268" height="268" alt="Сливочное с кусочками черного шоколада">
+          <img src="img/products/product-darkchocolate.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
         </div>
         <div class="product-price">
           <p><b>355</b>
-          <img src="https://www.artlebedev.ru/tools/technogrette/html/rouble/ruble.gif" width="30" height="40" alt="Р">
+          <img src="img/rouble.svg" width="28" height="30" alt="Р">
           / кг
           </p>
         </div>
@@ -326,11 +328,11 @@
       </div>
       <div class="product-card">
         <div class="product-image">
-          <img src="http://placehold.it/268x268" width="268" height="268" alt="Сливочное с мятным сиропом">
+          <img src="img/products/product-mint.jpg" width="267" height="267" alt="Сливочное с мятным сиропом">
         </div>
         <div class="product-price">
           <p><b>420</b>
-          <img src="https://www.artlebedev.ru/tools/technogrette/html/rouble/ruble.gif" width="30" height="40" alt="Р">
+          <img src="img/rouble.svg" width="28" height="30" alt="Р">
           / кг
           </p>
         </div>
@@ -392,7 +394,7 @@
       </section>
       <section class="footer-copyright">
         <a href="https://htmlacademy.ru">
-          <img src="http://placehold.it/120x40" width="120" height="40" alt="HTML Academy">
+          <img src="img/htmlacademy-logo.png" width="108" height="38" alt="HTML Academy">
         </a>
         <p>
           Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> &copy; 2017

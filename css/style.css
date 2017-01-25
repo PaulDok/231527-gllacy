@@ -1,0 +1,17 @@
+body {
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 30px;
+}

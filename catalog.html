@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   <header class="main-header">
-    <div class="container">
+    <div class="container clearfix">
       <nav class="main-navigation">
         <a href="index.html">
           <img src="img/header-logo.png" width="154" height="64" alt="Глейси">
@@ -120,9 +121,9 @@
       <h2>Сливочное мороженое</h2>
     </div>
 
-    <div class="filters">
+    <div class="filters clearfix">
       <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="filters-form-part">
+        <div class="filters-form-part sort-by">
           <p>Сортировка:</p>
           <div class="filters-form-part-selector">
             <select name="sort-by" id="sort-by">
@@ -133,7 +134,7 @@
             </select>
           </div>
         </div>
-        <div class="filters-form-part">
+        <div class="filters-form-part price-range">
           <p>Цена: 100 руб. - 500 руб.</p>
           <div class="filters-form-part-selector">
             <input type="range" name="price-range" id="price-range" multiple
@@ -144,7 +145,7 @@
         </div>
         <div class="filters-form-part">
           <p>Жирность:</p>
-          <div class="filters-form-part-selector">
+          <div class="filters-form-part-selector fat">
             <label>
               <input type="radio" name="fat" id="fat" value="0%">
               0%
@@ -163,7 +164,7 @@
             </label>
           </div>
         </div>
-        <div class="filters-form-part">
+        <div class="filters-form-part fillings">
           <p>Наполнители:</p>
           <div class="filters-form-part-selector">
             <input type="checkbox" name="chocolate" id="chocolate" checked>
@@ -182,7 +183,7 @@
       </form>
     </div>
 
-    <div class="products">
+    <div class="products clearfix">
       <div class="product-card">
         <div class="product-image">
           <img src="img/products/product-orange.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
@@ -341,7 +342,7 @@
       </div>
     </div>
 
-    <div class="paging">
+    <div class="paging clearfix">
       <ul class="products-paging">
         <li>
           <span class="inactive-link">&lt</span>

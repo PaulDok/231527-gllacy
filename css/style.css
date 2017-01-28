@@ -1,6 +1,7 @@
 body {
   font-size: 16px;
   line-height: 22px;
+  /*comment out color to see text on white background*/
   color: #ffffff;
   font-weight: normal;
 }
@@ -14,4 +15,256 @@ h2 {
 h3 {
   font-size: 24px;
   line-height: 30px;
+}
+
+/*Document Block Model*/
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 1146px;
+  margin: 0 auto;
+  padding: 0 27px;
+}
+
+.main-header {
+  margin-bottom: 5px;
+}
+
+.main-navigation {
+  float: left;
+  width: 560px;
+
+  min-height: 70px;
+}
+
+.user-block {
+  float: right;
+  width: 267px;
+
+  min-height: 70px;
+}
+
+.contacts {
+  float: right;
+  width: 267px;
+}
+
+.landing-image {
+  position: relative;
+  margin-bottom: 66px;
+  height: 511px;
+}
+
+.landing-image .slider-controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+
+  min-height: 20px;
+}
+
+.slider-product-image {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.slider-offer {
+  width: 670px;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 325px;
+  text-align: center;
+}
+
+.featured-offer {
+  font-size: 60px;
+  line-height: 60.35px;
+  font-weight: bold;
+}
+
+.banners {
+  margin-bottom: 35px;
+}
+
+.banner {
+  width: 560px;
+  min-height: 230px;
+}
+
+.banner-left {
+  float: left;
+}
+
+.banner-right {
+  float: right;
+}
+
+.hits {
+  margin-bottom: 40px;
+}
+
+.product-card {
+  width: 267px;
+  height: 330px;
+  float: left;
+  margin-right: 26px;
+}
+
+.product-card:nth-child(4n) {
+  margin-right: 0;
+}
+
+.hit-logo {
+  width: 61px;
+  height: 61px;
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.product-image {
+  position: absolute;
+  z-index: -1;
+}
+
+.product-price {
+  margin-top: 215px;
+}
+
+.seo {
+  margin-bottom: 40px;
+}
+
+.seo-left {
+  width: 560px;
+  float: left;
+  margin-right: 26px;
+}
+
+.seo-right {
+  width: 560px;
+  float: right;
+}
+
+.seo-item > img {
+  width: 49px;
+  float: left;
+}
+
+.seo-item > p {
+  width: 485px;
+  float: right;
+}
+
+.blog-and-mailing {
+  margin-bottom: 40px;
+}
+
+.blog {
+  width: 560px;
+  float: left;
+  margin-right: 26px;
+}
+
+.mailing {
+  width: 560px;
+  float: left;
+}
+
+.map {
+  height: 435px;
+  position: relative;
+}
+
+.map-map {
+  position: absolute;
+  left: -27px;
+}
+
+.map-pin {
+  position: absolute;
+  top: 136px;
+  left: 240px;
+}
+
+.map-contacts {
+  width: 305px;
+  position: absolute;
+  top: 60px;
+  right: 0;
+}
+
+.main-footer {
+  padding-top: 20px;
+  padding-bottom: 26px;
+}
+
+.footer-social {
+  float: left;
+  width: 267px;
+  margin-right: 134px;
+
+  min-height: 40px;
+}
+
+.footer-about-links {
+  float: left;
+  width: 320px;
+
+  min-height: 60px;
+}
+
+.footer-copyright {
+  float: right;
+  width: 267px;
+
+  min-height: 66px;
+}
+
+/* Catalog page */
+.filters {
+  width: 879px;
+  margin-bottom: 40px;
+}
+
+.filters-form-part {
+  float: left;
+}
+
+.sort-by {
+  width: 194px;
+  margin-right: 15px;
+}
+
+.price-range {
+  width: 218px;
+  margin-right: 15px;
+}
+
+.fat {
+  width: 416px;
+}
+
+.fillings {
+  width: 700px;
+  margin-right: 14px;
+}
+
+.products {
+  margin-bottom: 80px;
+}
+
+.products-paging {
+  float: right;
 }

@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   <header class="main-header">
-    <div class="container">
+    <div class="container clearfix">
       <nav class="main-navigation">
         <img src="img/header-logo.png" width="154" height="64" alt="Глейси">
         <ul>
@@ -113,25 +114,31 @@
         </div>
         <div class="slider-inner">
           <div class="slider-inner-slide-1">
-            <img src="img/icecreams-1.png" width="647" height="584" alt="Крем-брюле и пломбир с малиновым джемом">
-            <span class="featured-offer">Крем-брюле и пломбир с малиновым джемом</span>
-            <a class="btn" href="#">Давайте оба!</a>
+            <img src="img/icecreams-1.png" class="slider-product-image" width="647" height="584" alt="Крем-брюле и пломбир с малиновым джемом">
+            <div class="slider-offer">
+              <span class="featured-offer">Крем-брюле и пломбир с малиновым джемом</span><br>
+              <a class="btn" href="#">Давайте оба!</a>
+            </div>
           </div>
           <div class="slider-inner-slide-2" hidden>
-            <img src="img/icecreams-2.png" width="644" height="582" alt="Шоколадный пломбир и лимонный сорбет">
-            <span class="featured-offer">Шоколадный пломбир и лимонный сорбет</span>
-            <a class="btn" href="#">Давайте оба!</a>
+            <img src="img/icecreams-2.png" class="slider-product-image" width="644" height="582" alt="Шоколадный пломбир и лимонный сорбет">
+            <div class="slider-offer">
+              <span class="featured-offer">Шоколадный пломбир и лимонный сорбет</span><br>
+              <a class="btn" href="#">Давайте оба!</a>
+            </div>
           </div>
           <div class="slider-inner-slide-3" hidden>
-            <img src="img/icecreams-3.png" width="639" height="582" alt="Пломбир с помадкой и клубничный щербет">
-            <span class="featured-offer">Пломбир с помадкой и клубничный щербет</span>
-            <a class="btn" href="#">Давайте оба!</a>
+            <img src="img/icecreams-3.png" class="slider-product-image" width="639" height="582" alt="Пломбир с помадкой и клубничный щербет">
+            <div class="slider-offer">
+              <span class="featured-offer">Пломбир с помадкой и клубничный щербет</span><br>
+              <a class="btn" href="#">Давайте оба!</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="banners">
+    <div class="banners clearfix">
       <div class="banner banner-left">
         <h2>Малинка даром!</h2>
         <p>При покупке 2кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -144,7 +151,7 @@
       </div>
     </div>
 
-    <div class="hits">
+    <div class="hits clearfix">
       <div class="product-card">
         <div class="hit-logo">
           <img src="img/hit.jpg" width="61" height="61" alt="Хит" class="hit">
@@ -211,31 +218,31 @@
       </div>
     </div>
 
-    <div class="seo">
+    <div class="seo clearfix">
       <h3>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
       <div class="seo-left">
-        <div class="seo-item">
+        <div class="seo-item clearfix">
           <img src="img/thumbnail-icecream.png" width="49" height="49" alt="Мороженое">
           <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
         </div>
-        <div class="seo-item">
+        <div class="seo-item clearfix">
           <img src="img/thumbnail-leaf.png" width="49" height="49" alt="Сырье">
           <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
         </div>
       </div>
       <div class="seo-right">
-        <div class="seo-item">
+        <div class="seo-item clearfix">
           <img src="img/thumbnail-cow.png" width="49" height="49" alt="Закупки">
           <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
         </div>
-        <div class="seo-item">
+        <div class="seo-item clearfix">
           <img src="img/thumbnail-thermometer.png" width="49" height="49" alt="Доставка">
           <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
         </div>
       </div>
     </div>
 
-    <div class="blog-and-mailing">
+    <div class="blog-and-mailing clearfix">
       <div class="blog">
         <p>Новое в нашем блоге</p>
         <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
@@ -250,9 +257,10 @@
     </div>
 
     <div class="map">
-      <img src="img/map.jpg" width="1200" height="430" alt="Карта">
-      <img src="img/map-pin.png" width="80" height="140" alt="Место">
-      <img src="img/map-pin-shadow.png" width="182" height="110" alt="тень">
+      <img class="map-map" src="img/map.jpg" width="1200" height="430" alt="Карта">
+      <div class="map-pin">
+        <img src="img/map-pin.png" width="218" height="142" alt="Место">
+      </div>
       <div class="map-contacts">
         <p>
           Адрес главного офиса и офлайн магазина:<br>
@@ -269,7 +277,7 @@
   </main>
 
   <footer class="main-footer">
-    <div class="container">
+    <div class="container clearfix">
       <section class="footer-social">
         <ul class="list-social">
           <li>

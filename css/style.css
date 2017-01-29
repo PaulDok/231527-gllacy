@@ -41,6 +41,24 @@ h3 {
   min-height: 70px;
 }
 
+.main-navigation a,
+.main-navigation img,
+.main-navigation ul li {
+  float: left;
+}
+
+.user-block ul li {
+  float: left;
+}
+
+.submenu,
+.search-field,
+.login-form-div,
+.cart-div,
+.order-list-div {
+  display: none;
+}
+
 .user-block {
   float: right;
   width: 267px;
@@ -142,6 +160,10 @@ h3 {
   margin-top: 215px;
 }
 
+.quick-view {
+  display: none;
+}
+
 .seo {
   margin-bottom: 40px;
 }
@@ -218,6 +240,10 @@ h3 {
   min-height: 40px;
 }
 
+.list-social li {
+  float: left;
+}
+
 .footer-about-links {
   float: left;
   width: 320px;
@@ -233,6 +259,10 @@ h3 {
 }
 
 /* Catalog page */
+.breadcrumbs ul li {
+  float: left;
+}
+
 .filters {
   width: 879px;
   margin-bottom: 40px;
@@ -267,4 +297,8 @@ h3 {
 
 .products-paging {
   float: right;
+}
+
+.products-paging li {
+  float: left;
 }

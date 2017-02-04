@@ -3,35 +3,41 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   <header class="main-header">
     <div class="container clearfix">
       <nav class="main-navigation">
-        <a href="index.html">
-          <img src="img/header-logo.png" width="154" height="64" alt="Глейси">
-        </a>
         <ul>
+          <li>
+            <a class="nav-home" href="index.html">
+              <img src="img/header-logo.png" width="154" height="64" alt="Глейси">
+            </a>
+          </li>
           <li class="current">
             <a href="#">Каталог</a>
-            <ul class="submenu">
-              <li class="featured">
-                <a href="#">Новинки</a>
-              </li>
-              <li>
-                <a href="catalog.html">Сливочное</a>
-              </li>
-              <li>
-                <a href="#">Щербеты</a>
-              </li>
-              <li>
-                <a href="#">Фруктовый лед</a>
-              </li>
-              <li>
-                <a href="#">Мелорин</a>
-              </li>
-            </ul>
+            <div class="submenu">
+              <ul>
+                <li class="featured">
+                  <a href="#">Новинки</a>
+                </li>
+                <li class="current">
+                  <a href="catalog.html">Сливочное</a>
+                </li>
+                <li>
+                  <a href="#">Щербеты</a>
+                </li>
+                <li>
+                  <a href="#">Фруктовый лед</a>
+                </li>
+                <li>
+                  <a href="#">Мелорин</a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li>
             <a href="#">Доставка и оплата</a>
@@ -66,7 +72,7 @@
             </div>
           </li>
           <li>
-            <a class="header-btn cart" href="#">2 товара</a>
+            <a class="header-btn cart cart-not-empty" href="#">2 товара</a>
             <div class="order-list-div">
               <ul class="order-list">
                 <li class="order-list-item">
@@ -195,7 +201,9 @@
           </p>
         </div>
         <a class="product-link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-        <a class="btn quick-view" href="#">Быстрый просмотр</a>
+        <div class="quick-view-overlay">
+          <a class="btn quick-view" href="#">Быстрый просмотр</a>
+        </div>
       </div>
       <div class="product-card">
         <div class="product-image">
@@ -208,7 +216,9 @@
           </p>
         </div>
         <a class="product-link" href="#">Сливочно-кофейное с кусочками шоколада</a>
-        <a class="btn quick-view" href="#">Быстрый просмотр</a>
+        <div class="quick-view-overlay">
+          <a class="btn quick-view" href="#">Быстрый просмотр</a>
+        </div>
       </div>
       <div class="product-card">
         <div class="product-image">
@@ -221,7 +231,9 @@
           </p>
         </div>
         <a class="product-link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-        <a class="btn quick-view" href="#">Быстрый просмотр</a>
+        <div class="quick-view-overlay">
+          <a class="btn quick-view" href="#">Быстрый просмотр</a>
+        </div>
       </div>
       <div class="product-card">
         <div class="product-image">
@@ -234,7 +246,9 @@
           </p>
         </div>
         <a class="product-link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
-        <a class="btn quick-view" href="#">Быстрый просмотр</a>
+        <div class="quick-view-overlay">
+          <a class="btn quick-view" href="#">Быстрый просмотр</a>
+        </div>
       </div>
       <div class="product-card">
         <div class="product-image">
@@ -247,7 +261,9 @@
           </p>
         </div>
         <a class="product-link" href="#">Сливочное с брусничным джемом</a>
-        <a class="btn quick-view" href="#">Быстрый просмотр</a>
+        <div class="quick-view-overlay">
+          <a class="btn quick-view" href="#">Быстрый просмотр</a>
+        </div>
       </div>
       <div class="product-card">
         <div class="product-image">
@@ -260,7 +276,9 @@
           </p>
         </div>
         <a class="product-link" href="#">Сливочно-черничное с цельными ягодами черники</a>
-        <a class="btn quick-view" href="#">Быстрый просмотр</a>
+        <div class="quick-view-overlay">
+          <a class="btn quick-view" href="#">Быстрый просмотр</a>
+        </div>
       </div>
       <div class="product-card">
         <div class="product-image">
@@ -273,7 +291,9 @@
           </p>
         </div>
         <a class="product-link" href="#">Сливочно-лимонное с карамельной присыпкой</a>
-        <a class="btn quick-view" href="#">Быстрый просмотр</a>
+        <div class="quick-view-overlay">
+          <a class="btn quick-view" href="#">Быстрый просмотр</a>
+        </div>
       </div>
       <div class="product-card">
         <div class="product-image">
@@ -286,7 +306,9 @@
           </p>
         </div>
         <a class="product-link" href="#">Сливочное с шоколадной стружкой</a>
-        <a class="btn quick-view" href="#">Быстрый просмотр</a>
+        <div class="quick-view-overlay">
+          <a class="btn quick-view" href="#">Быстрый просмотр</a>
+        </div>
       </div>
       <div class="product-card">
         <div class="product-image">
@@ -299,7 +321,9 @@
           </p>
         </div>
         <a class="product-link" href="#">Сливочно-ванильное с кусочками шоколада</a>
-        <a class="btn quick-view" href="#">Быстрый просмотр</a>
+        <div class="quick-view-overlay">
+          <a class="btn quick-view" href="#">Быстрый просмотр</a>
+        </div>
       </div>
       <div class="product-card">
         <div class="product-image">
@@ -312,7 +336,9 @@
           </p>
         </div>
         <a class="product-link" href="#">Сливочное с ментоловым сиропом</a>
-        <a class="btn quick-view" href="#">Быстрый просмотр</a>
+        <div class="quick-view-overlay">
+          <a class="btn quick-view" href="#">Быстрый просмотр</a>
+        </div>
       </div>
       <div class="product-card">
         <div class="product-image">
@@ -325,7 +351,9 @@
           </p>
         </div>
         <a class="product-link" href="#">Сливочное с кусочками черного шоколада</a>
-        <a class="btn quick-view" href="#">Быстрый просмотр</a>
+        <div class="quick-view-overlay">
+          <a class="btn quick-view" href="#">Быстрый просмотр</a>
+        </div>
       </div>
       <div class="product-card">
         <div class="product-image">
@@ -338,7 +366,9 @@
           </p>
         </div>
         <a class="product-link" href="#">Сливочное с мятным сиропом</a>
-        <a class="btn quick-view" href="#">Быстрый просмотр</a>
+        <div class="quick-view-overlay">
+          <a class="btn quick-view" href="#">Быстрый просмотр</a>
+        </div>
       </div>
     </div>
 
@@ -370,7 +400,7 @@
   </main>
 
   <footer class="main-footer">
-    <div class="container">
+    <div class="container clearfix">
       <section class="footer-social">
         <ul class="list-social">
           <li>
@@ -388,10 +418,14 @@
         </ul>
       </section>
       <section class="footer-about-links">
-        <a class="favorite" href="#">Для поставщиков</a>
-        <a href="#">Наши документы</a>
-        <a href="#">О производстве</a>
-        <a href="#">Экологические стандарты</a>
+        <div class="footer-links-column">
+          <a class="favorite" href="#">Для поставщиков</a><br>
+          <a href="#">О производстве</a>
+        </div>
+        <div class="footer-links-column">
+          <a href="#">Наши документы</a><br>
+          <a href="#">Экологические стандарты</a>
+        </div>
       </section>
       <section class="footer-copyright">
         <a href="https://htmlacademy.ru">

@@ -47,55 +47,57 @@
       </nav>
       <div class="user-block">
         <ul>
-          <li>
+          <li class="search">
             <a class="header-btn search" href="#"></a>
             <div class="search-field">
               <input type="search" name="search-field" id="search-field" placeholder="Что ищем?">
             </div>
           </li>
-          <li>
+          <li class="login">
             <a class="header-btn login" href="#">Вход</a>
             <div class="login-form-div">
               <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-                <input type="email" id="email" name="email">
-                <input type="password" id="password" name="password">
-                <div class="login-form-div-left">
-                  <button class="btn" type="submit">Войти</button>
-                </div>
-                <div class="login-form-div-right">
-                  <a href="#">Забыли пароль?</a><br>
-                  <a href="#">Новая регистрация</a>
+                <input type="email" id="email" name="email" placeholder="Электронная почта">
+                <input type="password" id="password" name="password" placeholder="Пароль">
+                <div class="clearfix">
+                  <div class="login-form-div-left">
+                    <button class="btn" type="submit">Войти</button>
+                  </div>
+                  <div class="login-form-div-right">
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Новая регистрация</a>
+                  </div>
                 </div>
               </form>
             </div>
           </li>
-          <li>
+          <li class="cart">
             <a class="header-btn cart" href="#">Пусто</a>
-            <div class="cart-div">
+            <div class="order-list-div">
               <ul class="order-list">
                 <li class="order-list-item">
-                  <form class="delete-item-form" action="https://echo.htmlacademy.ru" method="post">
-                    <button class="delete-btn">X</button>
+                  <form class="delete-item-form clearfix" action="https://echo.htmlacademy.ru" method="post">
+                    <button class="delete-btn"></button>
                     <img src="img/products/product-orange.jpg" width="35" height="35" alt="Удалить">
                     <input type="text" name="product-item" value="creamy-orange" hidden>
-                    <span>Пломбир с апельсиновым джемом</span>
-                    <span>1,5 кг x <i>200 руб.</i></span>
-                    <span>300 руб.</span>
+                    <span class="product-description">Пломбир с апельсиновым джемом</span>
+                    <span class="volume">1,5 кг x <i>200 руб.</i></span>
+                    <span class="subtotal">300 руб.</span>
                   </form>
                 </li>
                 <li class="order-list-item">
-                  <form class="delete-item-form" action="https://echo.htmlacademy.ru" method="post">
-                    <button class="delete-btn">X</button>
+                  <form class="delete-item-form clearfix" action="https://echo.htmlacademy.ru" method="post">
+                    <button class="delete-btn"></button>
                     <img src="img/products/product-strawberry.jpg" width="35" height="35" alt="Удалить">
                     <input type="text" name="product-item" value="creamy-strawberry" hidden>
-                    <span>Клубничный пломбир с присыпкой из белого шоколада</span>
-                    <span>1,5 кг x <i>300 руб.</i></span>
-                    <span>450 руб.</span>
+                    <span class="product-description">Клубничный пломбир с присыпкой из белого шоколада</span>
+                    <span class="volume">1,5 кг x <i>300 руб.</i></span>
+                    <span class="subtotal">450 руб.</span>
                   </form>
                 </li>
               </ul>
               <p>Итого: 750 руб.</p>
-              <a class="btn" href="#">Оформить заказ</a>
+              <a class="btn btn-order" href="#">Оформить заказ</a>
             </div>
           </li>
         </ul>
@@ -110,13 +112,13 @@
         <span class="contact-phone">8 812 450-25-25</span>
       </div>
       <div class="slider">
+        <input type="radio" id="btn-1" name="toggle" class="slider1" checked>
+        <input type="radio" id="btn-2" name="toggle" class="slider2">
+        <input type="radio" id="btn-3" name="toggle" class="slider3">
         <div class="slider-controls">
-          <input type="radio" id="btn-1" name="toggle" checked>
-          <label for="btn-1"></label>
-          <input type="radio" id="btn-2" name="toggle">
-          <label for="btn-2"></label>
-          <input type="radio" id="btn-3" name="toggle">
-          <label for="btn-3"></label>
+          <label for="btn-1" class="slider1"></label>
+          <label for="btn-2" class="slider2"></label>
+          <label for="btn-3" class="slider3"></label>
         </div>
         <div class="slider-inner">
           <div class="slider-inner-slide-1">
@@ -126,14 +128,14 @@
               <a class="btn btn-big" href="#">Давайте оба!</a>
             </div>
           </div>
-          <div class="slider-inner-slide-2" hidden>
+          <div class="slider-inner-slide-2">
             <img src="img/icecreams-2.png" class="slider-product-image" width="1065" height="859" alt="Шоколадный пломбир и лимонный сорбет">
             <div class="slider-offer">
               <span class="featured-offer">Шоколадный пломбир и лимонный сорбет</span><br>
               <a class="btn btn-big" href="#">Давайте оба!</a>
             </div>
           </div>
-          <div class="slider-inner-slide-3" hidden>
+          <div class="slider-inner-slide-3">
             <img src="img/icecreams-3.png" class="slider-product-image" width="1079" height="854" alt="Пломбир с помадкой и клубничный щербет">
             <div class="slider-offer">
               <span class="featured-offer">Пломбир с помадкой и клубничный щербет</span><br>

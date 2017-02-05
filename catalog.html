@@ -49,55 +49,57 @@
       </nav>
       <div class="user-block">
         <ul>
-          <li>
+          <li class="search">
             <a class="header-btn search" href="#"></a>
             <div class="search-field">
               <input type="search" name="search-field" id="search-field" placeholder="Что ищем?">
             </div>
           </li>
-          <li>
+          <li class="login">
             <a class="header-btn login" href="#">Вход</a>
             <div class="login-form-div">
               <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-                <input type="email" id="email" name="email">
-                <input type="password" id="password" name="password">
-                <div class="login-form-div-left">
-                  <button class="btn" type="submit">Войти</button>
-                </div>
-                <div class="login-form-div-right">
-                  <a href="#">Забыли пароль?</a><br>
-                  <a href="#">Новая регистрация</a>
+                <input type="email" id="email" name="email" placeholder="Электронная почта">
+                <input type="password" id="password" name="password" placeholder="Пароль">
+                <div class="clearfix">
+                  <div class="login-form-div-left">
+                    <button class="btn" type="submit">Войти</button>
+                  </div>
+                  <div class="login-form-div-right">
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Новая регистрация</a>
+                  </div>
                 </div>
               </form>
             </div>
           </li>
-          <li>
+          <li class="cart cart-not-empty">
             <a class="header-btn cart cart-not-empty" href="#">2 товара</a>
             <div class="order-list-div">
               <ul class="order-list">
                 <li class="order-list-item">
-                  <form class="delete-item-form" action="https://echo.htmlacademy.ru" method="post">
-                    <button class="delete-btn">X</button>
+                  <form class="delete-item-form clearfix" action="https://echo.htmlacademy.ru" method="post">
+                    <button class="delete-btn"></button>
                     <img src="img/products/product-orange.jpg" width="35" height="35" alt="Удалить">
                     <input type="text" name="product-item" value="creamy-orange" hidden>
-                    <span>Пломбир с апельсиновым джемом</span>
-                    <span>1,5 кг x <i>200 руб.</i></span>
-                    <span>300 руб.</span>
+                    <span class="product-description">Пломбир с апельсиновым джемом</span>
+                    <span class="volume">1,5 кг x <i>200 руб.</i></span>
+                    <span class="subtotal">300 руб.</span>
                   </form>
                 </li>
                 <li class="order-list-item">
-                  <form class="delete-item-form" action="https://echo.htmlacademy.ru" method="post">
-                    <button class="delete-btn">X</button>
+                  <form class="delete-item-form clearfix" action="https://echo.htmlacademy.ru" method="post">
+                    <button class="delete-btn"></button>
                     <img src="img/products/product-strawberry.jpg" width="35" height="35" alt="Удалить">
                     <input type="text" name="product-item" value="creamy-strawberry" hidden>
-                    <span>Клубничный пломбир с присыпкой из белого шоколада</span>
-                    <span>1,5 кг x <i>300 руб.</i></span>
-                    <span>450 руб.</span>
+                    <span class="product-description">Клубничный пломбир с присыпкой из белого шоколада</span>
+                    <span class="volume">1,5 кг x <i>300 руб.</i></span>
+                    <span class="subtotal">450 руб.</span>
                   </form>
                 </li>
               </ul>
               <p>Итого: 750 руб.</p>
-              <a class="btn" href="#">Оформить заказ</a>
+              <a class="btn btn-order" href="#">Оформить заказ</a>
             </div>
           </li>
         </ul>
@@ -106,7 +108,7 @@
   </header>
 
   <main class="container">
-    <div class="page-header">
+    <div class="page-header clearfix">
       <div class="contacts">
         <span class="working-hours">С 10 до 20, ежедневно</span><br>
         <span class="contact-phone">8 812 450-25-25</span>
@@ -124,14 +126,15 @@
           </li>
         </ul>
       </div>
-      <h2>Сливочное мороженое</h2>
     </div>
+
+    <h2 class="catalog-header">Сливочное мороженое</h2>
 
     <div class="filters clearfix">
       <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="filters-form-part sort-by">
           <p>Сортировка:</p>
-          <div class="filters-form-part-selector">
+          <div class="filters-form-part-selector select-filter">
             <select name="sort-by" id="sort-by">
               <option value="popularity">по популярности</option>
               <option value="price-asc">сначала недорогие</option>
@@ -143,36 +146,28 @@
         <div class="filters-form-part price-range">
           <p>Цена: 100 руб. - 500 руб.</p>
           <div class="filters-form-part-selector">
-            <input type="range" name="price-range" id="price-range" multiple
-              min="0" max="750" step="50" value="0.10">
-            <!-- https://habrahabr.ru/post/247935/
-              Javascript подключу позже, сейчас - разметка -->
+            <div class="bar-full-range"></div>
+            <div class="bar-selected-range"></div>
+            <div class="range-selector range-min"></div>
+            <div class="range-selector range-max"></div>
           </div>
         </div>
         <div class="filters-form-part">
           <p>Жирность:</p>
-          <div class="filters-form-part-selector fat">
-            <label>
-              <input type="radio" name="fat" id="fat" value="0%">
-              0%
-            </label>
-            <label>
-              <input type="radio" name="fat" id="fat" value="10%" checked>
-              до 10%
-            </label>
-            <label>
-              <input type="radio" name="fat" id="fat" value="30%">
-              до 30%
-            </label>
-            <label>
-              <input type="radio" name="fat" id="fat" value="30%+">
-              выше 30%
-            </label>
+          <div class="filters-form-part-selector fat-selector">
+            <input type="radio" name="fat" id="fat1" value="0%">
+            <label for="fat1">0%</label>
+            <input type="radio" name="fat" id="fat2" value="10%" checked>
+            <label for="fat2">до 10%</label>
+            <input type="radio" name="fat" id="fat3" value="30%">
+            <label for="fat3">до 30%</label>
+            <input type="radio" name="fat" id="fat4" value="30%+">
+            <label for="fat4">выше 30%</label>
           </div>
         </div>
         <div class="filters-form-part fillings">
           <p>Наполнители:</p>
-          <div class="filters-form-part-selector">
+          <div class="filters-form-part-selector fillings-selector">
             <input type="checkbox" name="chocolate" id="chocolate" checked>
             <label for="chocolate">шоколадные</label>
             <input type="checkbox" name="sugar-toppings" id="sugar-toppings" checked>
@@ -374,11 +369,11 @@
 
     <div class="paging clearfix">
       <ul class="products-paging">
-        <li>
-          <span class="inactive-link">&lt</span>
+        <li class="inactive-link">
+          <span>&lt</span>
         </li>
-        <li>
-          <a href="#" class="current-page">1</a>
+        <li class="current-page">
+          <a href="#">1</a>
         </li>
         <li>
           <a href="#">2</a>

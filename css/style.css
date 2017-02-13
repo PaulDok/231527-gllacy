@@ -740,11 +740,11 @@ input.slider2:checked ~ .site-wrapper .slider-inner-slide-3 {
 }
 
 .site-wrapper::before {
-  background-image: url("slide-2.png");
+  background-image: url("../img/icecreams-2.png");
 }
 
 .site-wrapper::after {
-  background-image: url("slide-3.png");
+  background-image: url("../img/icecreams-3.png");
 }
 
 input.slider1:checked ~ .site-wrapper {
@@ -1412,7 +1412,8 @@ input.slider3:checked ~ .site-wrapper {
   width: 6px;
   height: 6px;
 
-  background-image: url("../img/quote.png");
+  background-image: url("../img/sprite.png");
+  background-position: -10px -1038px;
 }
 
 .catalog-header {
@@ -1455,9 +1456,9 @@ input.slider3:checked ~ .site-wrapper {
 }
 
 .select-filter {
-  background-image: url("../img/dropdown-light.png");
+  background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
-  background-position: 90% 50%;
+  background-position: 130% -964px;
   width: 100%;
 }
 
@@ -1483,7 +1484,8 @@ input.slider3:checked ~ .site-wrapper {
 
 .select-filter:hover {
   background-color: #ffffff;
-  background-image: url("../img/dropdown-dark.png");
+  background-image: url("../img/sprite.png");
+  background-position: 130% -939px;
 }
 
 .select-filter:hover select,
@@ -1745,12 +1747,12 @@ input.slider3:checked ~ .site-wrapper {
 
 .previous-page,
 .next-page {
-  background: url("../img/page-next.png") no-repeat;
-  background-position: 10px 5px;
+  background: url("../img/sprite.png") no-repeat;
+  background-position: -2px -999px;
 }
 
 .previous-page {
-  background-position: 10px 10px;
+  background-position: -2px -995px;
   transform: rotate(180deg);
 }
 

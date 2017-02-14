@@ -546,8 +546,6 @@ a.cart-not-empty:hover + .order-list-div,
 }
 
 .delete-item-form img {
-  display: inline-block;
-  vertical-align: top;
   float: left;
   margin: 0;
   margin-left: 15px;
@@ -556,8 +554,6 @@ a.cart-not-empty:hover + .order-list-div,
 }
 
 .product-description {
-  display: inline-block;
-  vertical-align: top;
   float: left;
   margin: 0;
   margin-top: 10px;
@@ -573,8 +569,6 @@ a.cart-not-empty:hover + .order-list-div,
 }
 
 .volume {
-  display: inline-block;
-  vertical-align: top;
   float: left;
   margin: 0;
   margin-top: 10px;
@@ -593,8 +587,6 @@ a.cart-not-empty:hover + .order-list-div,
 }
 
 .subtotal {
-  display: inline-block;
-  vertical-align: top;
   float: right;
   padding-right: 18px;
   margin-top: 10px;
@@ -616,7 +608,6 @@ a.cart-not-empty:hover + .order-list-div,
 }
 
 .order-list-div .btn-order {
-  display: inline-block;
   float: right;
   margin: 0;
 }
@@ -781,6 +772,14 @@ input.slider3:checked ~ .site-wrapper {
   text-align: center;
 }
 
+.slider,
+.slider-inner,
+.slider-inner-slide-1,
+.slider-inner-slide-2,
+.slider-inner-slide-3 {
+  height: 100%;
+}
+
 .btn {
   display: inline-block;
   padding: 10px 23px;
@@ -924,6 +923,7 @@ input.slider3:checked ~ .site-wrapper {
 
 .product-link {
   display: inline-block;
+  vertical-align: top;
   color: #ffffff;
   text-decoration: none;
   font-size: 16px;
@@ -1072,6 +1072,7 @@ input.slider3:checked ~ .site-wrapper {
 
 .blog a {
   display: inline-block;
+  vertical-align: top;
   max-width: 315px;
 
   font-size: 24px;
@@ -1156,6 +1157,9 @@ input.slider3:checked ~ .site-wrapper {
 .map-map {
   position: absolute;
   left: -27px;
+
+  width: 1200px;
+  height: 430px;
 }
 
 .map-pin {
@@ -1244,7 +1248,6 @@ input.slider3:checked ~ .site-wrapper {
   display: inline-block;
   width: 32px;
   height: 32px;
-  /*margin-right: 12px;*/
 
   font-size: 0;
   vertical-align: top;
@@ -1289,6 +1292,7 @@ input.slider3:checked ~ .site-wrapper {
 
 .footer-links-column {
   display: inline-block;
+  vertical-align: top;
 }
 
 .footer-about-links a {
@@ -1566,6 +1570,7 @@ input.slider3:checked ~ .site-wrapper {
 .fat-selector input[type="radio"] + label,
 .fillings-selector input[type="checkbox"] + label {
   display: inline-block;
+  vertical-align: top;
   margin-top: 10px;
   margin-left: 20px;
   padding-left: 25px;
@@ -1647,6 +1652,7 @@ input.slider3:checked ~ .site-wrapper {
 
 .apply {
   display: inline-block;
+  vertical-align: top;
   margin-top: 21px;
   width: 141px;
   height: 36px;

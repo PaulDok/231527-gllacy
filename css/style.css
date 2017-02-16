@@ -1162,6 +1162,15 @@ input.slider3:checked ~ .site-wrapper {
   height: 430px;
 }
 
+.map-yandex-map {
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  min-width: 1200px;
+  height: 430px;
+  z-index: 1;
+}
+
 .map-pin {
   position: absolute;
   top: 136px;
@@ -1174,6 +1183,7 @@ input.slider3:checked ~ .site-wrapper {
   top: 65px;
   right: -5px;
   padding: 27px 25px;
+  z-index: 2;
 
   font-size: 14px;
   line-height: 20px;

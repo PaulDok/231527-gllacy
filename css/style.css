@@ -1149,26 +1149,13 @@ input.slider3:checked ~ .site-wrapper {
   margin-left: 8px;
 }
 
-.map {
-  height: 435px;
-  position: relative;
-}
-
 .map-map {
-  position: absolute;
-  left: -27px;
-
   width: 1200px;
   height: 430px;
 }
 
 .map-yandex-map {
-  position: absolute;
-  left: 0;
-  width: 100vw;
-  min-width: 1200px;
   height: 430px;
-  z-index: 1;
 }
 
 .map-pin {
@@ -1177,11 +1164,15 @@ input.slider3:checked ~ .site-wrapper {
   left: 240px;
 }
 
+.map-container {
+  position: relative;
+}
+
 .map-contacts {
   width: 255px;
   position: absolute;
   top: 65px;
-  right: -5px;
+  right: 27px;
   padding: 27px 25px;
   z-index: 2;
 
@@ -1192,6 +1183,20 @@ input.slider3:checked ~ .site-wrapper {
 
   background-color: #fdfefe;
   border-radius: 13px;
+}
+
+.relative {
+  position: relative;
+}
+
+.relative-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .map-contacts p {

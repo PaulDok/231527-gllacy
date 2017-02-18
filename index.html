@@ -16,10 +16,10 @@
         <header class="main-header">
           <div class="container clearfix">
             <nav class="main-navigation">
+              <div class="nav-logo-item">
+                <img src="img/header-logo.png" width="154" height="64" alt="Глейси">
+              </div>
               <ul>
-                <li class="nav-logo-item">
-                  <img src="img/header-logo.png" width="154" height="64" alt="Глейси">
-                </li>
                 <li class="main-menu-item">
                   <a class="main-menu-link expandable" href="#">Каталог</a>
                   <div class="submenu">
@@ -55,8 +55,11 @@
                 <li class="search">
                   <a class="header-btn search" href="#"></a>
                   <div class="search-field">
-                    <input class="input-search" type="search" name="search-field" id="search-field" required placeholder="Что ищем?">
-                    <label class="input-search-helper" for="search-field">Что ищем?</label>
+                    <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+                      <input class="input-search" type="search" name="search-field" id="search-field" required placeholder="Что ищем?">
+                      <label class="input-search-helper" for="search-field">Что ищем?</label>
+                      <button class="search-button" type="submit">Search</button>
+                    </form>
                   </div>
                 </li>
                 <li class="login">
@@ -82,30 +85,32 @@
                 <li class="cart">
                   <a class="header-btn cart" href="#">Пусто</a>
                   <div class="order-list-div">
-                    <ul class="order-list">
-                      <li class="order-list-item">
-                        <form class="delete-item-form clearfix" action="https://echo.htmlacademy.ru" method="post">
-                          <button class="delete-btn"></button>
-                          <img src="img/products/product-orange.jpg" width="35" height="35" alt="Удалить">
-                          <input type="text" name="product-item" value="creamy-orange" hidden>
-                          <span class="product-description">Пломбир с апельсиновым джемом</span>
-                          <span class="volume">1,5 кг x <i>200 руб.</i></span>
-                          <span class="subtotal">300 руб.</span>
-                        </form>
-                      </li>
-                      <li class="order-list-item">
-                        <form class="delete-item-form clearfix" action="https://echo.htmlacademy.ru" method="post">
-                          <button class="delete-btn"></button>
-                          <img src="img/products/product-strawberry.jpg" width="35" height="35" alt="Удалить">
-                          <input type="text" name="product-item" value="creamy-strawberry" hidden>
-                          <span class="product-description">Клубничный пломбир с присыпкой из белого шоколада</span>
-                          <span class="volume">1,5 кг x <i>300 руб.</i></span>
-                          <span class="subtotal">450 руб.</span>
-                        </form>
-                      </li>
-                    </ul>
-                    <p>Итого: 750 руб.</p>
-                    <a class="btn btn-order" href="#">Оформить заказ</a>
+                    <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
+                      <ul class="order-list">
+                        <li class="order-list-item">
+                          <div class="delete-item-form clearfix">
+                            <button class="delete-btn" type="button"></button>
+                            <img src="img/products/product-orange.jpg" width="35" height="35" alt="Удалить">
+                            <input type="text" name="product-item" value="creamy-orange" hidden>
+                            <span class="product-description">Пломбир с апельсиновым джемом</span>
+                            <span class="volume">1,5 кг x <i>200 руб.</i></span>
+                            <span class="subtotal">300 руб.</span>
+                          </div>
+                        </li>
+                        <li class="order-list-item">
+                          <div class="delete-item-form clearfix">
+                            <button class="delete-btn" type="button"></button>
+                            <img src="img/products/product-strawberry.jpg" width="35" height="35" alt="Удалить">
+                            <input type="text" name="product-item" value="creamy-strawberry" hidden>
+                            <span class="product-description">Клубничный пломбир с присыпкой из белого шоколада</span>
+                            <span class="volume">1,5 кг x <i>300 руб.</i></span>
+                            <span class="subtotal">450 руб.</span>
+                          </div>
+                        </li>
+                      </ul>
+                      <p>Итого: 750 руб.</p>
+                      <button type="submit" class="btn btn-order">Оформить заказ</button>
+                    </form>
                   </div>
                 </li>
               </ul>
@@ -288,13 +293,23 @@
               </div>
               <div class="map-contacts">
                 <p>
-                  Адрес главного офиса<br>и офлайн магазина:<br>
-                  <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+                  <span class="map-contacts-intro">
+                    Адрес главного офиса и офлайн магазина:
+                  </span>
+                  <span class="map-contacts-line">
+                    <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+                  </span>
                 </p>
                 <p>
-                  Для заказов по телефону:<br>
-                  <b>8 812 450-25-25</b><br>
-                  (с 10 до 20 ежедневно)
+                  <span class="map-contacts-line">
+                    Для заказов по телефону:
+                  </span>
+                  <span class="map-contacts-line">
+                    <b>8 812 450-25-25</b>
+                  </span>
+                  <span class="map-contacts-line">
+                    (с 10 до 20 ежедневно)
+                  </span>
                 </p>
                 <button class="btn feedback-btn" type="button">Форма обратной связи</button>
               </div>
@@ -322,11 +337,11 @@
             </section>
             <section class="footer-about-links">
               <div class="footer-links-column">
-                <a class="favorite text-link" href="#">Для поставщиков</a><br>
+                <a class="favorite text-link" href="#">Для поставщиков</a>
                 <a class="text-link" href="#">О производстве</a>
               </div>
               <div class="footer-links-column">
-                <a class="text-link" href="#">Наши документы</a><br>
+                <a class="text-link" href="#">Наши документы</a>
                 <a class="text-link" href="#">Экологические стандарты</a>
               </div>
             </section>

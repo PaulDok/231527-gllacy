@@ -821,7 +821,7 @@ input.slider3:checked ~ .site-wrapper {
   text-decoration: none;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 
-  background-image: linear-gradient(to right, #e74a35, #f26843);
+  background-image: linear-gradient(to top, #e74a35, #f26843);
   cursor: pointer;
 
   border: none;
